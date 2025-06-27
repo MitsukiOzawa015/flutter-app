@@ -3,7 +3,7 @@ import 'package:practice_app/page/post/post.dart';
 import 'package:practice_app/page/story/story.dart';
 
 class Insta extends StatelessWidget {
-  const Insta({Key? key});
+  const Insta({super.key});
 
   @override
   Widget build(BuildContext context) {
