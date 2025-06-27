@@ -10,7 +10,7 @@ import 'package:practice_app/page/post/post_images.dart';
 import 'package:practice_app/page/post/post_like.dart';
 
 class Post extends StatefulWidget {
-  const Post({Key? key});
+  const Post({super.key});
 
   @override
   State<Post> createState() => _PostState();
