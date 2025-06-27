@@ -1,25 +1,133 @@
 # practice_app
 
-A new Flutter project.
+Instagramライクな機能を持つFlutterアプリケーション
 
-## Getting Started
+## プロジェクトの概要
 
-This project is a starting point for a Flutter application.
+このリポジトリは、Flutterを使用してInstagramのような機能を実装した練習用アプリケーションです。ストーリー機能と投稿機能を中心とした、ソーシャルメディアアプリの基本的な機能を学習・実装することを目的としています。クリーンアーキテクチャとBLoCパターンを採用し、実用的なアプリ開発の設計パターンを学べるプロジェクトとなっています。
 
-A few resources to get you started if this is your first Flutter project:
+## 主な機能
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **ストーリー機能**
+  - ユーザーストーリーの表示
+  - 横スクロールによるストーリー閲覧
+  - ストーリーコンテンツの管理
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **投稿機能**
+  - 画像付き投稿の表示
+  - カルーセル表示による複数画像対応
+  - いいね機能
+  - ユーザー情報の表示
 
+- **UI/UX機能**
+  - レスポンシブデザイン
+  - キャッシュ機能付き画像表示
+  - スムーズなスクロールとアニメーション
+  - Instagramライクなユーザーインターフェース
 
+## 使用している技術スタック
 
-https://github.com/user-attachments/assets/e5f8fff9-781d-467b-b84b-75dbbe252cf9
+### フレームワーク・言語
+- **Flutter** (3.3.0以上)
+- **Dart**
 
+### 状態管理
+- **flutter_bloc** (7.3.3) - BLoCパターンによる状態管理
+- **bloc** (7.2.1) - BLoCライブラリ
+- **equatable** (2.0.5) - 値オブジェクトの比較
 
-Images form: https://pixabay.com/ja/
+### UI/UXライブラリ
+- **cached_network_image** (3.3.0) - キャッシュ機能付き画像表示
+- **carousel_slider** (4.2.1) - カルーセル表示
+- **dots_indicator** (2.1.1) - ページインジケーター
+
+### ネットワーク・データ処理
+- **http** (1.1.0) - HTTP通信
+- **html_unescape** (2.0.0) - HTMLエスケープ処理
+
+### 開発・テスト
+- **flutter_test** - テストフレームワーク
+- **bloc_test** (8.5.0) - BLoCテスト
+- **flutter_lints** (3.0.0) - コード品質管理
+
+## セットアップ手順
+
+### 前提条件
+- Flutter SDK (3.3.0以上)
+- Dart SDK
+- Android Studio / VS Code (推奨)
+- iOS開発の場合: Xcode (macOSのみ)
+
+### インストール手順
+
+1. **リポジトリのクローン**
+   ```bash
+   git clone https://github.com/MitsukiOzawa015/flutter-app.git
+   cd flutter-app
+   ```
+
+2. **依存関係のインストール**
+   ```bash
+   flutter pub get
+   ```
+
+3. **アプリケーションの実行**
+   ```bash
+   # 利用可能なデバイスの確認
+   flutter devices
+   
+   # アプリケーションの実行
+   flutter run
+   ```
+
+4. **ビルド（リリース版）**
+   ```bash
+   # Android
+   flutter build apk
+   
+   # iOS
+   flutter build ios
+   ```
+
+## 想定する利用者・ユースケース
+
+### 対象ユーザー
+- **Flutter学習者**: Flutterの実践的なアプリ開発を学びたい開発者
+- **モバイルアプリ開発初心者**: ソーシャルメディアアプリの基本構造を理解したい方
+- **BLoCパターン学習者**: 状態管理パターンの実装例を参考にしたい開発者
+- **クリーンアーキテクチャ学習者**: 実用的なアーキテクチャパターンを学びたい方
+
+### 利用シーン
+- **学習目的**: Flutter開発の練習・スキルアップ
+- **参考実装**: 類似アプリ開発時のリファレンス
+- **技術検証**: BLoCパターンやクリーンアーキテクチャの動作確認
+- **UI/UX研究**: Instagramライクなインターフェースの実装研究
+
+## その他備考
+
+### 注意点
+- このアプリケーションは学習・練習目的で作成されており、商用利用は想定していません
+- 使用している画像素材は[Pixabay](https://pixabay.com/ja/)から提供されたものです
+- 実際のInstagramとは関係のない独立したアプリケーションです
+
+### 今後の改善予定
+- より多くのInstagram機能の実装
+- テストカバレッジの向上
+- パフォーマンスの最適化
+- UI/UXの向上
+
+### 貢献について
+このプロジェクトへの貢献を歓迎します。Issue や Pull Request をお気軽にお送りください。
+
+### ライセンス
+このプロジェクトの詳細なライセンス情報については、プロジェクトオーナーにお問い合わせください。
+
+---
+
+## スクリーンショット
+
+![アプリケーション画面](https://github.com/user-attachments/assets/e5f8fff9-781d-467b-b84b-75dbbe252cf9)
+
+**画像提供**: [Pixabay](https://pixabay.com/ja/)
 
 
